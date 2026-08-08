@@ -20,6 +20,7 @@ interface Project {
 }
 
 const projects: Project[] = [
+  // 6 "Коммерческий макияж": 3 standard, 3 with `beforeImage`
   {
     id: 1,
     title: "Vogue Editorial",
@@ -30,46 +31,149 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "Spring Collection",
+    category: "Коммерческий макияж",
+    image: "https://images.unsplash.com/photo-1526413232644-8a407dd56113?q=80&w=1200&auto=format&fit=crop",
+    role: "Lead Artist",
+    description: "Легкий весенний макияж для каталога одежды."
+  },
+  {
+    id: 3,
+    title: "Glow Skin Campaign",
+    category: "Коммерческий макияж",
+    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1200&auto=format&fit=crop",
+    role: "Makeup Artist",
+    description: "Акцент на сияющую кожу для бренда уходовой косметики."
+  },
+  {
+    id: 4,
+    title: "Bridal Transformation",
+    category: "Коммерческий макияж",
+    image: "https://images.unsplash.com/photo-1507504031003-b417219a0fde?q=80&w=1200&auto=format&fit=crop",
+    beforeImage: "https://images.unsplash.com/photo-1505503693641-1926193e8d57?q=80&w=1200&auto=format&fit=crop",
+    role: "Makeup Artist",
+    description: "Нежный свадебный макияж. Подготовка кожи и создание стойкого образа."
+  },
+  {
+    id: 5,
+    title: "Evening Glamour",
+    category: "Коммерческий макияж",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop",
+    beforeImage: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1200&auto=format&fit=crop",
+    role: "Makeup Artist",
+    description: "Яркий вечерний макияж с акцентом на глаза и контуринг."
+  },
+  {
+    id: 6,
+    title: "Fashion Week Ready",
+    category: "Коммерческий макияж",
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
+    beforeImage: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=1200&auto=format&fit=crop",
+    role: "Lead Makeup",
+    description: "Подготовка модели к показу, идеальный тон и четкие линии."
+  },
+
+  // 9 "Грим для кино & Театра": all standard (no beforeImage)
+  {
+    id: 7,
+    title: "Period Drama: 1920s",
+    category: "Грим для кино & Театра",
+    image: "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?q=80&w=1200&auto=format&fit=crop",
+    role: "Makeup Designer",
+    description: "Исторический макияж и прически для эпохи 1920-х годов."
+  },
+  {
+    id: 8,
+    title: "Avant-Garde Theater",
+    category: "Грим для кино & Театра",
+    image: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=1200&auto=format&fit=crop",
+    role: "Key Makeup",
+    description: "Экспрессивный театральный грим с использованием боди-арта."
+  },
+  {
+    id: 9,
+    title: "Sci-Fi Character",
+    category: "Грим для кино & Театра",
+    image: "https://images.unsplash.com/photo-1542385151-efd9000785a0?q=80&w=1200&auto=format&fit=crop",
+    role: "Concept Artist",
+    description: "Грим инопланетного персонажа для независимого фильма."
+  },
+  {
+    id: 10,
+    title: "Noir Detective",
+    category: "Грим для кино & Театра",
+    image: "https://images.unsplash.com/photo-1533516315582-7360bfbe6315?q=80&w=1200&auto=format&fit=crop",
+    role: "Key Artist",
+    description: "Создание атмосферного образа для фильма в стиле нуар."
+  },
+  {
+    id: 11,
+    title: "Opera Singer",
+    category: "Грим для кино & Театра",
+    image: "https://images.unsplash.com/photo-1517436073-3b1b1b86d9a0?q=80&w=1200&auto=format&fit=crop",
+    role: "Stage Makeup",
+    description: "Яркий сценический макияж, видимый с последних рядов."
+  },
+  {
+    id: 12,
+    title: "Fantasy Elf",
+    category: "Грим для кино & Театра",
+    image: "https://images.unsplash.com/photo-1496016943515-7d33598c11e6?q=80&w=1200&auto=format&fit=crop",
+    role: "Makeup Artist",
+    description: "Эльфийский образ с использованием накладных ушей."
+  },
+  {
+    id: 13,
+    title: "Street Urchin",
+    category: "Грим для кино & Театра",
+    image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1200&auto=format&fit=crop",
+    role: "Makeup Artist",
+    description: "Грязный и изношенный вид для уличного персонажа."
+  },
+  {
+    id: 14,
+    title: "Cyberpunk Hacker",
+    category: "Грим для кино & Театра",
+    image: "https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=1200&auto=format&fit=crop",
+    role: "Key Makeup",
+    description: "Неоновые акценты и текстуры для киберпанк стиля."
+  },
+  {
+    id: 15,
+    title: "Aristocrat",
+    category: "Грим для кино & Театра",
+    image: "https://images.unsplash.com/photo-1550928431-ee0ecb001a1c?q=80&w=1200&auto=format&fit=crop",
+    role: "Makeup Designer",
+    description: "Бледная кожа и сложные прически для роли аристократа."
+  },
+
+  // 3 "Спецгрим / SFX": all with beforeImage
+  {
+    id: 16,
     title: "Zombie Bite SFX",
     category: "Спецгрим / SFX",
     image: "https://images.unsplash.com/photo-1604179374026-62045cc94747?q=80&w=1200&auto=format&fit=crop",
     beforeImage: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop",
     role: "SFX Artist",
-    description: "Создание реалистичного укуса с использованием силиконовых накладок и театральной крови для короткометражного фильма."
+    description: "Создание реалистичного укуса с использованием силиконовых накладок."
   },
   {
-    id: 3,
-    title: "Period Drama",
-    category: "Грим для кино & Театра",
-    image: "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?q=80&w=1200&auto=format&fit=crop",
-    role: "Makeup Designer",
-    description: "Исторический макияж и прически для эпохи 1920-х годов. Работа с париками и винтажными текстурами."
-  },
-  {
-    id: 4,
-    title: "Beauty Campaign",
-    category: "Коммерческий макияж",
-    image: "https://images.unsplash.com/photo-1526413232644-8a407dd56113?q=80&w=1200&auto=format&fit=crop",
-    beforeImage: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1200&auto=format&fit=crop",
-    role: "Makeup Artist",
-    description: "Чистый сияющий макияж (glow skin) для рекламной кампании уходовой косметики."
-  },
-  {
-    id: 5,
+    id: 17,
     title: "Age Progression",
     category: "Спецгрим / SFX",
     image: "https://images.unsplash.com/photo-1505503693641-1926193e8d57?q=80&w=1200&auto=format&fit=crop",
     beforeImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop",
     role: "Prosthetics Artist",
-    description: "Возрастной грим (+30 лет) с использованием латекса, прорисовки морщин и седины."
+    description: "Возрастной грим (+30 лет) с использованием латекса."
   },
   {
-    id: 6,
-    title: "Avant-Garde Theater",
-    category: "Грим для кино & Театра",
-    image: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=1200&auto=format&fit=crop",
-    role: "Key Makeup",
-    description: "Экспрессивный театральный грим с использованием боди-арта и нестандартных материалов."
+    id: 18,
+    title: "Battle Scars",
+    category: "Спецгрим / SFX",
+    image: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1200&auto=format&fit=crop",
+    beforeImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop",
+    role: "SFX Artist",
+    description: "Шрамы и ожоги для сцены после битвы в боевике."
   }
 ];
 
