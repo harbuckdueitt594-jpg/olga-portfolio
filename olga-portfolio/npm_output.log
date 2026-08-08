@@ -1,0 +1,155 @@
+
+> olga-portfolio@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.0 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 902ms
+✓ Running next.config.ts took 93ms
+
+○ Compiling / ...
+⨯ Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at ignore-listed frames {
+  digest: '113452764@E231'
+}
+ GET / 500 in 5.6s (next.js: 4.9s, application-code: 742ms)
+[browser] Uncaught Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at Array.map (<anonymous>)
+    at About (src/components/About.tsx:28:15)
+    at Home (src/app/page.tsx:19:9)
+  26 |             <div className="absolute inset-0 bg-orchid/10 -translate-x-4 translate-y-4 rounded-sm" />
+  27 |             <div className="relative h-full w-full overflow-hidden rounded-sm">
+> 28 |               <Image
+     |               ^
+  29 |                 src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop"
+  30 |                 alt="Логачева Оля - работа на съемочной площадке"
+  31 |                 fill
+⨯ Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at ignore-listed frames {
+  digest: '113452764@E231'
+}
+ GET / 500 in 98ms (next.js: 10ms, application-code: 87ms)
+[browser] Uncaught Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at Array.map (<anonymous>)
+    at About (src/components/About.tsx:28:15)
+    at Home (src/app/page.tsx:19:9)
+  26 |             <div className="absolute inset-0 bg-orchid/10 -translate-x-4 translate-y-4 rounded-sm" />
+  27 |             <div className="relative h-full w-full overflow-hidden rounded-sm">
+> 28 |               <Image
+     |               ^
+  29 |                 src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop"
+  30 |                 alt="Логачева Оля - работа на съемочной площадке"
+  31 |                 fill
+⨯ Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at ignore-listed frames {
+  digest: '113452764@E231'
+}
+ GET / 500 in 80ms (next.js: 4ms, application-code: 76ms)
+[browser] Uncaught Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at Array.map (<anonymous>)
+    at About (src/components/About.tsx:28:15)
+    at Home (src/app/page.tsx:19:9)
+  26 |             <div className="absolute inset-0 bg-orchid/10 -translate-x-4 translate-y-4 rounded-sm" />
+  27 |             <div className="relative h-full w-full overflow-hidden rounded-sm">
+> 28 |               <Image
+     |               ^
+  29 |                 src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop"
+  30 |                 alt="Логачева Оля - работа на съемочной площадке"
+  31 |                 fill
+⨯ Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at ignore-listed frames {
+  digest: '113452764@E231'
+}
+ GET / 500 in 73ms (next.js: 3ms, application-code: 69ms)
+[browser] Uncaught Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at Array.map (<anonymous>)
+    at About (src/components/About.tsx:28:15)
+    at Home (src/app/page.tsx:19:9)
+  26 |             <div className="absolute inset-0 bg-orchid/10 -translate-x-4 translate-y-4 rounded-sm" />
+  27 |             <div className="relative h-full w-full overflow-hidden rounded-sm">
+> 28 |               <Image
+     |               ^
+  29 |                 src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop"
+  30 |                 alt="Логачева Оля - работа на съемочной площадке"
+  31 |                 fill
+⨯ Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at ignore-listed frames {
+  digest: '113452764@E231'
+}
+ GET / 500 in 82ms (next.js: 5ms, application-code: 78ms)
+[browser] Uncaught Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at Array.map (<anonymous>)
+    at About (src/components/About.tsx:28:15)
+    at Home (src/app/page.tsx:19:9)
+  26 |             <div className="absolute inset-0 bg-orchid/10 -translate-x-4 translate-y-4 rounded-sm" />
+  27 |             <div className="relative h-full w-full overflow-hidden rounded-sm">
+> 28 |               <Image
+     |               ^
+  29 |                 src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop"
+  30 |                 alt="Логачева Оля - работа на съемочной площадке"
+  31 |                 fill
+⨯ Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at ignore-listed frames {
+  digest: '113452764@E231'
+}
+ GET / 500 in 69ms (next.js: 4ms, application-code: 65ms)
+[browser] Uncaught Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at Array.map (<anonymous>)
+    at About (src/components/About.tsx:28:15)
+    at Home (src/app/page.tsx:19:9)
+  26 |             <div className="absolute inset-0 bg-orchid/10 -translate-x-4 translate-y-4 rounded-sm" />
+  27 |             <div className="relative h-full w-full overflow-hidden rounded-sm">
+> 28 |               <Image
+     |               ^
+  29 |                 src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop"
+  30 |                 alt="Логачева Оля - работа на съемочной площадке"
+  31 |                 fill
+⨯ Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at ignore-listed frames {
+  digest: '113452764@E231'
+}
+ GET / 500 in 82ms (next.js: 4ms, application-code: 78ms)
+[browser] Uncaught Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at Array.map (<anonymous>)
+    at About (src/components/About.tsx:28:15)
+    at Home (src/app/page.tsx:19:9)
+  26 |             <div className="absolute inset-0 bg-orchid/10 -translate-x-4 translate-y-4 rounded-sm" />
+  27 |             <div className="relative h-full w-full overflow-hidden rounded-sm">
+> 28 |               <Image
+     |               ^
+  29 |                 src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop"
+  30 |                 alt="Логачева Оля - работа на съемочной площадке"
+  31 |                 fill
+⨯ Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at ignore-listed frames {
+  digest: '113452764@E231'
+}
+ GET / 500 in 72ms (next.js: 4ms, application-code: 69ms)
+[browser] Uncaught Error: Invalid src prop (https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop) on `next/image`, hostname "images.unsplash.com" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+    at Array.map (<anonymous>)
+    at About (src/components/About.tsx:28:15)
+    at Home (src/app/page.tsx:19:9)
+  26 |             <div className="absolute inset-0 bg-orchid/10 -translate-x-4 translate-y-4 rounded-sm" />
+  27 |             <div className="relative h-full w-full overflow-hidden rounded-sm">
+> 28 |               <Image
+     |               ^
+  29 |                 src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop"
+  30 |                 alt="Логачева Оля - работа на съемочной площадке"
+  31 |                 fill
