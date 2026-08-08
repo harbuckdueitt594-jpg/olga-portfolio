@@ -6,17 +6,21 @@ import { Plus, Minus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface AccordionItemProps {
+  id: string;
   title: string;
   content: string;
   isOpen: boolean;
   onClick: () => void;
 }
 
-function AccordionItem({ title, content, isOpen, onClick }: AccordionItemProps) {
+function AccordionItem({ id, title, content, isOpen, onClick }: AccordionItemProps) {
   return (
     <div className="border-b border-ash/20">
       <button
-        className="w-full py-6 flex items-center justify-between text-left focus:outline-none group"
+        id={`accordion-header-${id}`}
+        aria-expanded={isOpen}
+        aria-controls={`accordion-content-${id}`}
+        className="w-full py-6 flex items-center justify-between text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orchid focus-visible:ring-offset-2 focus-visible:ring-offset-onyx rounded-sm group"
         onClick={onClick}
       >
         <span className={cn(
@@ -26,12 +30,15 @@ function AccordionItem({ title, content, isOpen, onClick }: AccordionItemProps) 
           {title}
         </span>
         <div className="ml-4 flex-shrink-0 text-ash group-hover:text-lavender transition-colors">
-          {isOpen ? <Minus className="h-5 w-5" /> : <Plus className="h-5 w-5" />}
+          {isOpen ? <Minus className="h-5 w-5" aria-hidden="true" /> : <Plus className="h-5 w-5" aria-hidden="true" />}
         </div>
       </button>
       <AnimatePresence initial={false}>
         {isOpen && (
           <motion.div
+            id={`accordion-content-${id}`}
+            role="region"
+            aria-labelledby={`accordion-header-${id}`}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -61,6 +68,7 @@ export function Accordion({ items, className }: AccordionProps) {
       {items.map((item, index) => (
         <AccordionItem
           key={index}
+          id={`accordion-${index}`}
           title={item.title}
           content={item.content}
           isOpen={openIndex === index}
