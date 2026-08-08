@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-onyx: #020202;
+  --color-cosmic: #1A1819;
+  --color-orchid: #E5BDDF;
+  --color-lavender: #D2C3F6;
+  --color-silk: #F5F5F7;
+  --color-ash: #9E9E9B;
+
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-roboto-mono);
+}
+
+:root {
+  --background: #020202;
+  --foreground: #F5F5F7;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+.mask-image-fade {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
